@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+    display: block;
+    margin: auto;
+    max-width: 1440px;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.img_group {
+    gap: 40px;
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+}
+
+.btn_group {
+    gap: 30px;
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.btn {
+    transition: all 1s ease-in-out;
+}
+
+.tab {
+    gap: 50px;
+    margin-top: 70px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    padding: 30px 100px;
+}
+
+.imgs_tab {
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img_tab {
+    position: absolute;
+    width: 450px;
+    /* transform-origin: bottom; */
+    transform: rotateY(90deg);
+    /* height: 0; */
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0);
+    transition: all 1s ease-in-out;
+}
+
+.img_tab.activ {
+    /* height: 600px; */
+    z-index: 999;
+    transform: rotateY(0);
+}
+
+.img_tab img {
+    width: 100%;
+    height: 100%;
+}
+
+.btns_tab {
+    gap: 10px;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, auto);
+}
+
+.btns {
+    top: 12px;
+    left: 12px;
+    color: crimson;
+    position: absolute;
+    padding: 30px 35px;
+    background: rgba(255, 255, 255, 0.658);
+    font-size: 25px;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.btns.activ {
+    top: 499px;
+}
+
+.btn_tab1.activ {
+    background: linear-gradient(0deg, rgb(167, 5, 5), rgba(255, 0, 0, 0.014));
+}
+
+.btn_tab1 {
+    position: relative;
+    border-radius: 50px;
+    width: 110px;
+    transition: all 1s ease-in-out;
+    background: linear-gradient(180deg, red, rgba(255, 0, 0, 0.014));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .img_group{
+    margin-top: 60px;
+    text-align: center;
+}
+.btn1,.btn2{
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    padding: 7px 18px;
+    background: none;
+    border-radius: 4px;
+    font-size: 23px;
+}
+.btn1{
+    color: green;
+}
+.btn2{
+    color: red;
+}
+.btn1.activ{
+    background: rgba(0, 128, 0, 0.411);
+}
+.btn2.activ{
+    background: rgba(255, 0, 0, 0.336);
+}
+.btn_group{
+    text-align: center;
+} */
